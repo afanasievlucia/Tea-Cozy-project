@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    /*font-size: 1.375rem;          -22px for text is to big*/
+    opacity: 0.9;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 90%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 81.25rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: black;
+    color: seashell;
+}
+.nav-bar {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    min-height: 4.312rem;
+    width: 81.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+.logo {
+    margin-left: 0.625rem;
+    max-height: 3.125rem ;
+}
+.link-pages a {
+    color: seashell;
+    margin: 0.625rem;
+}
+.inner {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    height: inherit;
+}
+.mission {
+    padding-top: 70px;
+    max-height: 43.75rem;
+    overflow: hidden;
+    position: relative;
+}
+.description {
+    position: absolute;
+    top: 40%;                        
+    background-color: black;
+}
+.normal-text {
+    text-transform: none;
+}
+.main-header {
+    width: 100%;
+    max-width: 62.5rem;
+    margin: 0 auto;
+    height: inherit;
+    margin-top: 3.75rem;
+}
+.photos {
+   /* display: grid;
+    grid-template-columns: repeat(auto-fit, 18.75rem);
+    justify-content: space-between;*/                 /*can put the photos in the second line to be closer*/  
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.photos img {
+    height: 12.5rem;
+}
+#margin-photo1 {
+    margin: 0 50px 0 50px;
+}
+#margin-photo2 {
+    margin: 0 0 0 50px;
+}
+.photos h4 {
+    margin-top: 0.625rem;
+}
+.location-photo {                 
+    max-height: 31.25rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3.125rem;
+}
+.location-photo h2 {
+    margin-bottom: 15px;
+}
+.addresses-container {
+    position: absolute;
+    top: 50%;                        
+    /*transform: translate(-110%, -50%);
+    display: inline;*/   
+    transform: translate(12%, -50%);
+    display: block;
+    justify-content: center;
+}
+.addresses {
+    display: flex;
+}
+.address {
+    background-color: black;
+    width: 18.75rem; 
+    line-height: 150%;
+}
+.address1 {
+    margin: 0 2.5rem;
+}
+.address2 {
+    opacity: 1;    /* it's not working*/
+}
+#footer {
+    height: 12.5rem;
+}
+#copyright {
+    text-align: left;
+    padding: 0 0 1.875rem 1.25rem;
+}
