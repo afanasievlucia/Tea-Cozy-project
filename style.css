@@ -24,7 +24,7 @@ body {
     z-index: 1;
     background-color: black;
     min-height: 4.312rem;
-    width: 81.25rem;
+    max-width: 81.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,13 +115,18 @@ body {
 .address1 {
     margin: 0 2.5rem;
 }
-.address2 {
-    opacity: 1;    /* it's not working*/
-}
 #footer {
     height: 12.5rem;
 }
 #copyright {
     text-align: left;
     padding: 0 0 1.875rem 1.25rem;
+}
+@media only screen and (min-width: 400px) {
+    .mission img, .nav-bar, .location-photo img {
+        width: 100%;
+    }
+    #margin-photo2 {
+        margin: 0;
+    }
 }
